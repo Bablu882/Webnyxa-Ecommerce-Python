@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-%eckd70i##mznm!a55p^yb&3unlw3!r)d3_g*=1zrx$_*_hy^5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["nest.apexcode.info",
-                 "www.nest.apexcode.info", "127.0.0.1", "127.0.0.1:8000"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
